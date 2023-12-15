@@ -1,0 +1,27 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+    font-family: var(--font-main);
+}
+
+.link {
+	color: #000000;
+}
+
+.link {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.link:hover {
+    background-size: 100% 2px;
+}
+

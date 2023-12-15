@@ -1,0 +1,16 @@
+.footer {
+	&__wrapper{
+        padding: 30px 22px;
+        text-transform: uppercase;
+        border: 1px solid #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media(max-width: 600px){
+            text-align: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+    }
+}
