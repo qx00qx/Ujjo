@@ -2,15 +2,16 @@
 	&__wrapper{
         padding: 30px 22px;
         text-transform: uppercase;
-        border: 1px solid #000000;
+        border: $border;
         display: flex;
         justify-content: space-between;
         align-items: center;
         
         @media(max-width: 600px){
             text-align: center;
-            gap: 10px;
+            gap: 20px;
             font-size: 14px;
+            flex-direction: column;
         }
     }
 }
