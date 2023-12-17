@@ -21,48 +21,15 @@
         }
     }
 
-    .slider {
-        overflow: hidden;
-        position: relative;
-        &__wrapper {
-            display: flex;
-            border-bottom: $border;
-            border-top: $border;
-            padding: 25px;
-
-        }
-        &__item {
-            display: flex;
-            align-items: center;
-            padding: 0 28px;
-            gap: 28px;
-            white-space: nowrap;
-            flex-shrink: 0;
-            animation: slider 5s linear infinite;
-
-            p {
-                font-size: 17px;
-                font-weight: 400;
-                line-height: 25.92px;
-                letter-spacing: 0.5px;
-                text-transform: uppercase;
-            }
-        }
-
-        @keyframes slider{
-            0% {
-                transform: translateZ(0);
-            }
-
-            to {
-                transform: translate3d(-100%, 0, 0);
-            }
-        }
-    }
+    
     &__right {
         &-text {
             padding: 20px 80px;
             border-bottom: $border;
+
+            @media (max-width: 1025px){
+                padding: 22px 80px;
+            }
 
             @media (max-width: 800px){
                 border-top: $border;
@@ -86,5 +53,140 @@
             padding: 20px;
         }
         
+    }
+}
+
+.product {
+    &__wrapper{
+        border: $border;
+        margin-top: -1px;
+    }
+    &__heading {
+        padding: 60px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: $border;
+
+        @media (max-width: 700px) {
+            overflow: hidden;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 65px;
+            font-weight: 400;
+            line-height: 72.576px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+
+            @media (max-width: 500px) {
+                font-size: 30px;
+                line-height: 50px;
+            }
+        }
+
+        .scorpio {
+            transform: scale(-1, 1)
+        }
+    }
+    &__content {
+        position: relative;
+        padding: 23px;
+
+        @media(max-width: 1025px){
+            margin-top: 20px;
+        }
+    }
+
+    &__decor {
+        display: flex;
+        position: absolute;
+        gap: 350px;
+        justify-content: space-between;
+        top: 20px;
+
+        li:nth-child(3){
+            margin-left: 40px;
+        }
+        @media (max-width: 1000px){
+            display: none;
+        }
+
+        @media(max-width: 1025px){
+            gap: 225px;
+            top: 7px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 23px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+
+        @media (max-width: 800px) {
+            // flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 100px 24px 22px;
+            gap: 14px;
+            min-height: 642px;
+            background-image: url('/img/card_background.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+
+            @media (max-width: 1090px){
+                min-height: 475px;
+                justify-content: center;
+            }
+
+            @media (max-width: 800px){
+                padding: 134px 24px 22px;
+            }
+            @media (max-width: 500px){
+                justify-content: center;
+                padding: 70px 24px 0px;
+                gap: 14px;
+                min-height: 522px;
+            }
+            @media (max-width: 391px){
+                min-height: 469px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.08px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        span {
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 38.016px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+
+            @media (max-width: 880px){
+                font-size: 25px;
+            }
+        }
+    }
+    &__img {
+        padding: 21px;
     }
 }
