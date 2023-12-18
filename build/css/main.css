@@ -658,7 +658,7 @@ body {
 .story__list {
   min-height: 650px;
   padding: 146px;
-  background-image: url("/build/img/story-img.svg");
+  background-image: url("./img/story-img.svg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
