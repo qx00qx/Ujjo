@@ -345,10 +345,6 @@ body {
   --spacing: 6px;
   --color: #000;
   --radius: 4px;
-  /* Fixed height and width */
-  /* height: var(--height); */
-  /* width: var(--width); */
-  /* Dynamic height and width */
   height: calc(var(--line-height) * 3 + var(--spacing) * 2);
   width: var(--width);
   display: flex;
@@ -569,7 +565,7 @@ body {
   padding: 100px 24px 22px;
   gap: 14px;
   min-height: 642px;
-  background-image: url("/build/img/card_background.svg");
+  background-image: url("./img/card_background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
