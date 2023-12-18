@@ -13,6 +13,12 @@
         width: 50%;
         .picture__left {
             padding: 20px;
+            @media (max-width: 800px){
+                padding: 40px;
+            }
+            @media(max-width: 450px){
+                padding: 0px;
+            }
         }
 
         @media (max-width: 800px){
@@ -51,6 +57,12 @@
         }
         .hero__image {
             padding: 20px;
+            @media (max-width: 800px){
+                padding: 40px;
+            }
+            @media(max-width: 450px){
+                padding: 0px;
+            }
         }
         
     }
@@ -127,7 +139,6 @@
         padding-bottom: 20px;
 
         @media (max-width: 800px) {
-            // flex-direction: column;
             flex-wrap: wrap;
         }
     }
@@ -188,6 +199,10 @@
     }
     &__img {
         padding: 21px;
+
+        @media(max-width: 450px){
+            padding: 0px;
+        }
     }
 }
 
@@ -215,6 +230,11 @@
         line-height: 64.512px;
         letter-spacing: 0.5px;
         text-transform: uppercase;
+
+        @media(max-width: 425px){
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 
     &__right{
@@ -272,10 +292,11 @@
             padding: 168px;
         }
     }
-    @media (max-width: 430px){
+
+    @media (max-width: 738px){
         &__list {
             width: 100%;
-            padding: 3px;
+            padding: 100px;
         }
         &__item {
             font-size: 13px;
@@ -284,9 +305,59 @@
             padding: 0;
         }
     }
+
+    @media (max-width: 450px){
+        &__list {
+            width: 100%;
+            padding: 20px;
+        }
+        &__item {
+            font-size: 13px;
+        }
+        &__right {
+            padding: 0;
+        }
+    }
+    @media (max-width: 400px){
+        &__heading {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    @media (max-width: 325px) {
+        &__list {
+            width: 100%;
+            padding: 3px;
+        }
+    }
+       
     &__slider {
         margin-top: -1px;
         border-left: $border;
         border-right: $border;
+    }
+}
+
+.banner {
+    &__img {
+        border-right: $border;
+        border-left: $border;
+        margin-top: -165px;
+
+        @media (max-width: 1024px){
+            margin-top: -113px;
+        }
+
+        @media (max-width: 800px){
+            margin-top: -90px;
+        }
+
+        @media (max-width: 650px){
+            margin-top: -30px;
+        }
+
+        @media (max-width: 470px){
+            margin-top: -27px;
+        }
     }
 }
