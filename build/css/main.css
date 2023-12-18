@@ -565,7 +565,7 @@ body {
   padding: 100px 24px 22px;
   gap: 14px;
   min-height: 642px;
-  background-image: url("./img/card_background.svg?v=001");
+  background-image: url("https://qx00qx.github.io/Ujjo/build/img/card_background.svg?v=001");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -658,7 +658,7 @@ body {
 .story__list {
   min-height: 650px;
   padding: 146px;
-  background-image: url("./img/story-img.svg?v=001");
+  background-image: url("https://qx00qx.github.io/Ujjo/build/img/story-img.svg?v=001");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
